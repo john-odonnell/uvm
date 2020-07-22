@@ -42,13 +42,15 @@ Hours spent analyzing: 3\
 Hours spent preparing: 4\
 Hours spent solving problems: 15
 
-[//]: # ARCHITECTURE
-[//]: #          bitpack.h
-[//]: #             |
-[//]: # um.c ---> run_um.h ----> execute.h
-[//]: #                 \       / 
-[//]: #                  \     /
-[//]: #                   seg.h
+<!--
+ARCHITECTURE
+          bitpack.h
+             |
+um.c --- run_um.h ---- execute.h
+                \       / 
+                 \     /
+                  seg.h
  
-[//]: # All aspects of the universal machine have been correctly implemented.
-[//]: # No significant departures from our design were made.
+All aspects of the universal machine have been correctly implemented.
+No significant departures from our design were made.
+-->
