@@ -5,13 +5,18 @@
 
 All aspects of the UVM have been implemented correctly to the assignment specifications.
 
+**Dependencies**
+
+David Hanson's [CII Library](https://github.com/drh/cii)
+
 **Architecture**
 
 8 general purpose registers.\
 A dynamic address space of memory segments, each with a unique 32 bit ID.\
 A 32 bit program counter, which points to program instructions in the most recently loaded program, or the "0 Segment".
 
-**Modules**\
+**Modules**
+
 *um.c*\
 Contains the main function of the universal machine.\
 Here, the file in question is opened, and then passed to the run_um.h module.
@@ -32,12 +37,14 @@ The interior Hanson sequences contain uint32_t's, which are all words within the
 
 The routine that takes the most time in the final version of our Universal Machine is Hanson’s Seq_get. This is due to our design, where the memory is a Hanson sequence of Hanson sequences. This cannot be improved because the implementation is not available to us.
 
-**Timing**\
+**Timing**
+
 Our UM executes the 85,070,522 instructions of midmark.umz in 8.176539 seconds.\
 This shows an instruction/second rate of about 10.5 million instructions per second.\
 This means our UM could execute 50 million instructions in about 4.7 seconds.
 
-**Work Hours**\
+**Work Hours**
+
 Hours spent analyzing: 3\
 Hours spent preparing: 4\
 Hours spent solving problems: 15
